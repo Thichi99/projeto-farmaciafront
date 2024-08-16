@@ -16,7 +16,7 @@ export const create = async (url: string, dados: object, setDados: Function) => 
       setDados(resposta.data);
     } catch (error) {
       console.error('Erro ao criar recurso:', error);
-      throw error; // Adicione um tratamento de erro se necessário
+      throw error;
     }
   };
   

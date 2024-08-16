@@ -37,9 +37,9 @@ function DeletarCategories() {
 
         try {
             console.log('Deletando categoria com ID:', id);
-            await deletar(`/categories/${id}`); // Verifique se a URL está correta
+            await deletar(`/categories/${id}`); 
             toastAlerta('Categoria apagada com sucesso', 'sucesso');
-            retornar(); // Redireciona após sucesso
+            retornar();
         } catch (error) {
             console.error('Erro ao apagar a Categoria:', error);
             toastAlerta('Erro ao apagar a Categoria', 'erro');

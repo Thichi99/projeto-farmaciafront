@@ -40,7 +40,7 @@ function FormCategories() {
     try {
       await create(`/categories`, category, setCategory);
       toastAlerta('Categoria cadastrada com sucesso', 'sucesso');
-      retornar(); // Redireciona após sucesso
+      retornar(); 
     } catch (error: any) {
       console.error('Erro ao cadastrar categoria:', error);
       toastAlerta('Erro ao cadastrar a Categoria', 'erro');
@@ -53,7 +53,7 @@ function FormCategories() {
     try {
       await update(`/categories/${id}`, category, setCategory);
       toastAlerta('Categoria atualizada com sucesso', 'sucesso');
-      retornar(); // Redireciona após sucesso
+      retornar(); 
     } catch (error: any) {
       console.error('Erro ao atualizar categoria:', error);
       toastAlerta('Erro ao atualizar a Categoria', 'erro');
